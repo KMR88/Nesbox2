@@ -6,6 +6,9 @@
       #NESbox {
         text-align: center;
       }
+      #hiddenthing {
+        display:none;
+      }
     </style>
     <link rel="shortcut icon" href="flash/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="flash/img/favicon.ico" type="image/x-icon">
@@ -18,7 +21,13 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-
+    <div id="passw">
+      <input type="password" id="password" onkeydown="if (event.keyCode == 13) document.getElementById('button').click()" />
+      <input id="button" type="button" value="Login" onclick="if (document.getElementById('password').value == 'playingames') { 
+document.getElementById('hiddenthing').classList.toggle('show');   document.getElementById('passw').style.display='none'; } 
+else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value.length);   } " />
+    </div>
+  <div id="hiddenthing">
     <section class="page-header">
       <h1 class="project-name">Nesbox</h1>
       <h2 class="project-tagline">Emulator of NES, Super Nintendo, Sega Mega Drive, GameBoy video consoles</h2>
@@ -79,6 +88,6 @@
       </footer>
 
     </section>
-  
+  </div>
   </body>
 </html>
