@@ -3,7 +3,6 @@ Nesbox Emulator
 
 NESbox is an emulator of NES, Super Nintendo, Sega Mega Drive and GameBoy video consoles, built on Adobe Flash technology and it can only be run directly in your browser's window.
 
-NOTICE: I have changed the password, and it will be back tomorrow.
 This github page has password protection, and the password is "playingames" without the quotes
 
 How to embed the emulator to your webpage?
